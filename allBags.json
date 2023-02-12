@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "categoru_id": 1,
+    "category_id": 1,
     "category": "Mountain_Bags",
     "bag_name": "Mountain Bag 1",
     "gender_category": "Both",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "categoru_id": 1,
+    "category_id": 1,
     "category": "Mountain_Bags",
     "bag_name": "Mountain Bag 2",
     "gender_category": "Both",
@@ -24,7 +24,7 @@
   },
   {
     "id": 3,
-    "categoru_id": 1,
+    "category_id": 1,
     "category": "Mountain_Bags",
     "bag_name": "Mountain Bag 3",
     "gender_category": "Both",
@@ -36,7 +36,7 @@
   },
   {
     "id": 4,
-    "categoru_id": 2,
+    "category_id": 2,
     "category": "School_Bags",
     "bag_name": "School Bag 1",
     "gender_category": "Both",
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "categoru_id": 2,
+    "category_id": 2,
     "category": "School_Bags",
     "bag_name": "School Bag 2",
     "gender_category": "Both",
@@ -60,7 +60,7 @@
   },
   {
     "id": 6,
-    "categoru_id": 2,
+    "category_id": 2,
     "category": "School_Bags",
     "bag_name": "School Bag 3",
     "gender_category": "Women",
@@ -72,7 +72,7 @@
   },
   {
     "id": 7,
-    "categoru_id": 3,
+    "category_id": 3,
     "category": "Ladies_Bags",
     "bag_name": "Ladies Bag 1",
     "gender_category": "Women",
@@ -84,7 +84,7 @@
 
   {
     "id": 8,
-    "categoru_id": 3,
+    "category_id": 3,
     "category": "Ladies_Bags",
     "bag_name": "Ladies Bag 2",
     "gender_category": "Women",
@@ -98,7 +98,7 @@
 
   {
     "id": 9,
-    "categoru_id": 3,
+    "category_id": 3,
     "category": "Ladies_Bags",
     "bag_name": "Ladies Bag 3",
     "gender_category": "Women",
@@ -109,7 +109,7 @@
   },
   {
     "id": 10,
-    "categoru_id": 4,
+    "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Men Bag 1",
     "gender_category": "Men",
@@ -121,7 +121,7 @@
   },
   {
     "id": 11,
-    "categoru_id": 4,
+    "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Men Bag 2",
     "gender_category": "Men",
@@ -132,7 +132,7 @@
   },
   {
     "id": 12,
-    "categoru_id": 4,
+    "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Men Bag 3",
     "gender_category": "Men",
@@ -143,7 +143,7 @@
   },
   {
     "id": 13,
-    "categoru_id": 4,
+    "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Money Bag 1",
     "gender_category": "Men",
@@ -154,7 +154,7 @@
   },
   {
     "id": 14,
-    "categoru_id": 4,
+    "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Money Bag 2",
     "gender_category": "Men",
@@ -166,7 +166,7 @@
   },
   {
     "id": 15,
-    "categoru_id": 4,
+    "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Money Bag 1",
     "gender_category": "Men",

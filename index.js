@@ -30,12 +30,30 @@ async function run() {
   try {
     const bagsCollection = client.db("bag-n-bagz").collection("all-bags");
 
-    // All bags API
+    // All bags Data
     app.get("/bags", async (req, res) => {
       const query = {};
       const cursor = await bagsCollection.find(query);
       const bags = await cursor.toArray();
       res.send(bags);
+    });
+
+    // Single Bag
+    app.get("/bags/:id", async (req, res) => {
+      const id = req.params.id;
+      // const query = { _id: new ObjectId(id) };
+      const query = {};
+      const cursor = await bagsCollection.find(query).toArray();
+      const bag = await cursor.find((n) => n.id == id);
+      res.send(bag);
+    });
+    // Category-based data load.
+    app.get("/bags/:category", async (req, res) => {
+      const category = req.params.category;
+      const query = {};
+      const cursor = await bagsCollection.find(query).toArray();
+      const categorised_bags = cursor.filter((n) => n.category == category);
+      res.send(categorised_bags);
     });
   } finally {
   }
