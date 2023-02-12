@@ -28,6 +28,15 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
+    const bagsCollection = client.db("bag-n-bagz").collection("all-bags");
+
+    // All bags API
+    app.get("/bags", async (req, res) => {
+      const query = {};
+      const cursor = await bagsCollection.find(query);
+      const bags = await cursor.toArray();
+      res.send(bags);
+    });
   } finally {
   }
 }
