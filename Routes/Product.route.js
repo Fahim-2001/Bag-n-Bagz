@@ -24,7 +24,7 @@ router.patch("/:id", async (req, res, next) => {
 
 // DELETE PRODUCT ROUTE
 router.delete("/:id", async (req, res, next) => {
-  res.send("Updating a product by Id.");
+  res.send("Deleting a product by Id.");
 });
 
 module.exports = router;
