@@ -1,30 +1,27 @@
 const express = require("express");
+const {
+  getAllProducts,
+  getProductById,
+  addProduct,
+  updateProductById,
+  deleteProductById,
+} = require("../Controllers/Product.controller");
 
 const router = express.Router();
 
 // ALL PRODUCTS ROUTE
-router.get("/", async (req, res, next) => {
-  res.send("Getting All Products.");
-});
+router.get("/", getAllProducts);
 
 // GET PRODUCT BY ID
-router.get("/:id", async (req, res, next) => {
-  res.send("Getting a product by Id.");
-});
+router.get("/:id", getProductById);
 
 // ADD PRODUCT ROUTE
-router.post("/", async (req, res, next) => {
-  res.send("Product added in DB");
-});
+router.post("/", addProduct);
 
 // UPDATE PRODUCT ROUTE
-router.patch("/:id", async (req, res, next) => {
-  res.send("Updating a product by Id.");
-});
+router.patch("/:id", updateProductById);
 
 // DELETE PRODUCT ROUTE
-router.delete("/:id", async (req, res, next) => {
-  res.send("Deleting a product by Id.");
-});
+router.delete("/:id", deleteProductById);
 
 module.exports = router;
