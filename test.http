@@ -6,30 +6,25 @@ POST http://localhost:5000/accounts
 Content-Type: application/json
 
 {
-    "category_id": 1,
-    "category": "Mountain_Bags",
-    "bag_name": "Mountain Bag 3",
-    "gender_category": "Both",
-    "description": "100% polyster, water resistance, all weather portected. Made to use in tough and rough condition. Easy to wash. Have enoung space. 1 year guranteed zippers.",
-    "img": "https://media.istockphoto.com/id/177813031/photo/backpack-isolated-w-path.jpg?s=612x612&w=0&k=20&c=ZEDa0PSxmJuWKW5ToIJMHzu7O0kIMQ88979ueasgigI=",
-    "img2": "https://i5.walmartimages.com/asr/af7712d8-0b1f-4f0d-9a4d-996c9103623e.08eb2a5fe0b7686b5d43c1e357e0de7f.jpeg",
-    "price": 440,
-    "ratings": 4.5
+    "name": "Md. Yasir Omar Fahim",
+    "email": "mdyasirofficial2001@gmail.com",
+    "phone": "+8801679670998",
+    "role": "admin"
   }
 
 ### Get a product by id.
 GET http://localhost:5000/accounts/id
 
 ### Update a product by id.
-PATCH  http://localhost:5000/accounts/id
+PATCH  http://localhost:5000/accounts/63ed029b79630130425a4b86
 Content-Type: application/json
 
 {
-    "bag_name": "Money Bag 3"
+    "role": "moderator"
 }
 
 ### Delete a product by id.
-DELETE   http://localhost:5000/accounts/id
+DELETE   http://localhost:5000/accounts/63ed02816ef27ca38ae01066
 
 ### Unknown API call , error check.
 
