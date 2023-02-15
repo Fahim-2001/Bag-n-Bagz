@@ -1,8 +1,8 @@
 ### Get all products
-GET http://localhost:5000/bags
+GET http://localhost:5000/accounts
 
 ### Add product to db.
-POST http://localhost:5000/bags
+POST http://localhost:5000/accounts
 Content-Type: application/json
 
 {
@@ -18,10 +18,10 @@ Content-Type: application/json
   }
 
 ### Get a product by id.
-GET http://localhost:5000/bags/id
+GET http://localhost:5000/accounts/id
 
 ### Update a product by id.
-PATCH  http://localhost:5000/bags/63ecec1f11d0f727c66505c4
+PATCH  http://localhost:5000/accounts/id
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 }
 
 ### Delete a product by id.
-DELETE   http://localhost:5000/bags/id
+DELETE   http://localhost:5000/accounts/id
 
 ### Unknown API call , error check.
 

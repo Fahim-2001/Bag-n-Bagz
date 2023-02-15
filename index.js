@@ -2,6 +2,7 @@ const express = require("express");
 const createHttpError = require("http-errors");
 const initDB = require("./initDB");
 const ProductRoute = require("./Routes/Product.route");
+const AccountRoute = require("./Routes/Account.route");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -11,7 +12,11 @@ initDB();
 app.use(express.json());
 
 // Route call
+app.get("/", (req, res, next) => {
+  res.send("Bag N Bagz server!");
+});
 app.use("/bags", ProductRoute);
+app.use("/accounts", AccountRoute);
 
 // 404 error handler
 app.use((req, res, next) => {
