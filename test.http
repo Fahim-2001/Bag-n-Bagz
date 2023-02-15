@@ -6,10 +6,10 @@ POST http://localhost:5000/accounts
 Content-Type: application/json
 
 {
-    "name": "Md. Yasir Omar Fahim",
-    "email": "mdyasirofficial2001@gmail.com",
-    "phone": "+8801679670998",
-    "role": "admin"
+    "name": "Elon Musk",
+    "email": "muskbsdk420@gmail.com",
+    "phone": "85474738237",
+    "role": "role"
   }
 
 ### Get a product by id.
