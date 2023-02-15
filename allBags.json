@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "category_id": 1,
     "category": "Mountain_Bags",
     "bag_name": "Mountain Bag 1",
@@ -11,7 +10,6 @@
     "ratings": 4
   },
   {
-    "id": 2,
     "category_id": 1,
     "category": "Mountain_Bags",
     "bag_name": "Mountain Bag 2",
@@ -23,7 +21,6 @@
     "ratings": 4
   },
   {
-    "id": 3,
     "category_id": 1,
     "category": "Mountain_Bags",
     "bag_name": "Mountain Bag 3",
@@ -35,7 +32,6 @@
     "ratings": 4.5
   },
   {
-    "id": 4,
     "category_id": 2,
     "category": "School_Bags",
     "bag_name": "School Bag 1",
@@ -48,7 +44,6 @@
     "ratings": 3
   },
   {
-    "id": 5,
     "category_id": 2,
     "category": "School_Bags",
     "bag_name": "School Bag 2",
@@ -59,7 +54,6 @@
     "ratings": 3.5
   },
   {
-    "id": 6,
     "category_id": 2,
     "category": "School_Bags",
     "bag_name": "School Bag 3",
@@ -71,7 +65,6 @@
     "ratings": 4
   },
   {
-    "id": 7,
     "category_id": 3,
     "category": "Ladies_Bags",
     "bag_name": "Ladies Bag 1",
@@ -83,7 +76,6 @@
   },
 
   {
-    "id": 8,
     "category_id": 3,
     "category": "Ladies_Bags",
     "bag_name": "Ladies Bag 2",
@@ -97,7 +89,6 @@
   },
 
   {
-    "id": 9,
     "category_id": 3,
     "category": "Ladies_Bags",
     "bag_name": "Ladies Bag 3",
@@ -108,7 +99,6 @@
     "ratings": 4.8
   },
   {
-    "id": 10,
     "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Men Bag 1",
@@ -120,7 +110,6 @@
     "ratings": 4.5
   },
   {
-    "id": 11,
     "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Men Bag 2",
@@ -131,7 +120,6 @@
     "ratings": 4
   },
   {
-    "id": 12,
     "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Men Bag 3",
@@ -142,7 +130,6 @@
     "ratings": 4.5
   },
   {
-    "id": 13,
     "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Money Bag 1",
@@ -153,7 +140,6 @@
     "ratings": 4.5
   },
   {
-    "id": 14,
     "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Money Bag 2",
@@ -165,7 +151,6 @@
     "ratings": 5
   },
   {
-    "id": 15,
     "category_id": 4,
     "category": "Men_Bags",
     "bag_name": "Money Bag 1",
