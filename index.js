@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const createHttpError = require("http-errors");
 const initDB = require("./initDB");
 const ProductRoute = require("./Routes/Product.route");
 const AccountRoute = require("./Routes/Account.route");
+const TopProducts = require("./Routes/TopProducts.route");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -10,6 +12,7 @@ const port = process.env.PORT || 5000;
 initDB();
 // Middlewares
 app.use(express.json());
+app.use(cors());
 
 // Route call
 app.get("/", (req, res, next) => {
@@ -17,6 +20,7 @@ app.get("/", (req, res, next) => {
 });
 app.use("/bags", ProductRoute);
 app.use("/accounts", AccountRoute);
+app.use("/topProducts", TopProducts);
 
 // 404 error handler
 app.use((req, res, next) => {
