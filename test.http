@@ -1,27 +1,21 @@
 ### Get all products
-GET http://localhost:5000/topProducts
+GET http://localhost:5000/customersReview
 
 
 ### Add product to db.
-POST http://localhost:5000/accounts
+POST http://localhost:5000/customersReview
 Content-Type: application/json
 
-{
-    "name": "Elon Musk",
-    "email": "muskbsdk420@gmail.com",
-    "phone": "85474738237",
-    "role": "role"
-  }
 
 ### Get a product by id.
 GET http://localhost:5000/accounts/63ed094b1b734d2f97dcb69d
 
 ### Update a product by id.
-PATCH  http://localhost:5000/accounts/63ed094b1b734d2f97dcb69d
+PATCH  http://localhost:5000/bags/id
 Content-Type: application/json
 
 {
-    "role": "moderator"
+   "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-TZ9Kb1DoO3DPuDeZgTUD0wsmWAokqAXvUQ&usqp=CAU"
 }
 
 ### Delete a product by id.

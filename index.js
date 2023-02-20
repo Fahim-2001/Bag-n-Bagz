@@ -4,7 +4,8 @@ const createHttpError = require("http-errors");
 const initDB = require("./initDB");
 const ProductRoute = require("./Routes/Product.route");
 const AccountRoute = require("./Routes/Account.route");
-const TopProducts = require("./Routes/TopProducts.route");
+const TopProductsRoute = require("./Routes/TopProducts.route");
+const HappyCustomerReviewRoute = require("./Routes/HappyCustomerReviews.route");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -20,7 +21,8 @@ app.get("/", (req, res, next) => {
 });
 app.use("/bags", ProductRoute);
 app.use("/accounts", AccountRoute);
-app.use("/topProducts", TopProducts);
+app.use("/topProducts", TopProductsRoute);
+app.use("/customersReview", HappyCustomerReviewRoute);
 
 // 404 error handler
 app.use((req, res, next) => {
