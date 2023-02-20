@@ -6,6 +6,12 @@ GET http://localhost:5000/customersReview
 POST http://localhost:5000/customersReview
 Content-Type: application/json
 
+{
+  "customer_name": "Md. Yasir Omar Fahim",
+  "customer_email": "mdyasirofficial2001@gmail.com",
+  "customer_img": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png",
+  "customer_review": "ABCD EFGH IJKL OMNP"
+}
 
 ### Get a product by id.
 GET http://localhost:5000/accounts/63ed094b1b734d2f97dcb69d
@@ -15,7 +21,7 @@ PATCH  http://localhost:5000/bags/id
 Content-Type: application/json
 
 {
-   "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-TZ9Kb1DoO3DPuDeZgTUD0wsmWAokqAXvUQ&usqp=CAU"
+   
 }
 
 ### Delete a product by id.
