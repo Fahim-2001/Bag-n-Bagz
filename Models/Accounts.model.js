@@ -13,7 +13,7 @@ const AccountSchema = new Schema({
   },
   phone: {
     type: String,
-    required: true,
+    required: false,
   },
   role: {
     type: String,
