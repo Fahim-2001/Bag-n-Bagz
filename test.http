@@ -22,7 +22,7 @@ Content-Type: application/json
 
 
 ### Delete a product by id.
-DELETE   http://localhost:5000/accounts/63fed3012aef92665dea0d95
+DELETE   http://localhost:5000/accounts/63fedef22aef92665dea0dd6
 
 ### Unknown API call , error check.
 
