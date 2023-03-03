@@ -1,5 +1,5 @@
 ### Get all products
-GET http://localhost:5000/accounts
+GET http://localhost:5000/customersReview
 
 
 ### Add product to db.
@@ -22,7 +22,7 @@ Content-Type: application/json
 
 
 ### Delete a product by id.
-DELETE   http://localhost:5000/accounts/63fedef22aef92665dea0dd6
+DELETE   http://localhost:5000/customersReview/640194b7bf2e52e4d53c3079
 
 ### Unknown API call , error check.
 

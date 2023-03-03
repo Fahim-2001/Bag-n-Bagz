@@ -1,4 +1,6 @@
 const express = require("express");
+const createHttpError = require("http-errors");
+const { default: mongoose } = require("mongoose");
 const HappyCustomerReview = require("../Models/HappyCustomerReviews.model");
 const router = express.Router();
 
@@ -26,4 +28,19 @@ router.post("/", async (req, res, next) => {
   }
 });
 
+router.delete("/:id", async (req, res, next) => {
+  try {
+    const result = await HappyCustomerReview.findByIdAndDelete(req.params.id);
+    //Error message if Review doesn't exist.
+    if (!result) throw createHttpError(404, "Review does not exist!");
+    res.send(result);
+  } catch (error) {
+    console.log(error.message);
+    //Error message for invalid id
+    if (error instanceof mongoose.CastError) {
+      return next(createHttpError(400, "Invalid Review Id."));
+    }
+    next(error);
+  }
+});
 module.exports = router;
