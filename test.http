@@ -1,6 +1,8 @@
 ### Get all products
-GET http://localhost:5000/customersReview
+GET http://localhost:5000/bags
 
+###Get Category based products
+GET http://localhost:5000/bags/category/Mountain_Bags
 
 ### Add product to db.
 POST http://localhost:5000/accounts
@@ -22,7 +24,7 @@ Content-Type: application/json
 
 
 ### Delete a product by id.
-DELETE   http://localhost:5000/customersReview/640194b7bf2e52e4d53c3079
+DELETE   http://localhost:5000/customersReview/6401b95261ae1ec91e1e1e69
 
 ### Unknown API call , error check.
 

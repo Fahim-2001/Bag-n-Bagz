@@ -33,6 +33,25 @@ module.exports = {
     }
   },
 
+  // GET Product By Category
+  getProductByCategory: async (req, res, next) => {
+    const category = req.params.category;
+    try {
+      const result = await Product.find({ category }, { __v: false });
+      //   Error if Category doesn't exist
+      if (!result) throw createHttpError(404, "Category Does not exist!");
+      res.send(result);
+    } catch (error) {
+      console.log(error.message);
+      //Error message for invalid category id
+      if (error instanceof mongoose.CastError) {
+        next(createHttpError(400, "Invalid category"));
+        return;
+      }
+      next(error);
+    }
+  },
+
   //   ADD PRODUCT FUNCTION
   addProduct: async (req, res, next) => {
     try {

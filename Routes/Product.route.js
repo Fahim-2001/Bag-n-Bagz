@@ -5,7 +5,9 @@ const {
   addProduct,
   updateProductById,
   deleteProductById,
+  getProductByCategory,
 } = require("../Controllers/Product.controller");
+const Product = require("../Models/Prodect.model");
 
 const router = express.Router();
 
@@ -14,6 +16,9 @@ router.get("/", getAllProducts);
 
 // GET PRODUCT BY ID
 router.get("/:id", getProductById);
+
+// GET PRODUCT BY CATEGORY
+router.get("/category/:category", getProductByCategory);
 
 // ADD PRODUCT ROUTE
 router.post("/", addProduct);
