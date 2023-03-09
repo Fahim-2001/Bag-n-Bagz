@@ -6,7 +6,6 @@ const {
   updateAccountById,
   deleteAccountById,
 } = require("../Controllers/Account.controller.");
-const Account = require("../Models/Accounts.model");
 const router = express.Router();
 
 // ALL ACCOUNT ROUTE
@@ -20,6 +19,7 @@ router.post("/", createAccount);
 
 // UPDATE ACCOUNT BY ID ROUTE
 router.patch("/:id", updateAccountById);
+
 // DELETE ACCOUNT BY ID ROUTE
 router.delete("/:id", deleteAccountById);
 

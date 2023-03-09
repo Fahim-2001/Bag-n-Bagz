@@ -26,6 +26,14 @@ Content-Type: application/json
   
 }
 
+### JWT Route Test
+POST http://localhost:5000/jwt
+Content-Type: application/json
+
+{
+  "email" : "johndoe@gmail.com"
+}
+
 ### Delete a product by id.
 DELETE   http://localhost:5000/customersReview/6401b95261ae1ec91e1e1e69
 
