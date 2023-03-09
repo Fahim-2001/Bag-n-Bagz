@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const createHttpError = require("http-errors");
+const morgan = require("morgan");
+const jwt = require("jsonwebtoken");
 const initDB = require("./initDB");
 const ProductRoute = require("./Routes/Product.route");
 const AccountRoute = require("./Routes/Account.route");
@@ -14,6 +16,7 @@ initDB();
 // Middlewares
 app.use(express.json());
 app.use(cors());
+app.use(morgan("dev"));
 
 // Route call
 app.get("/", (req, res, next) => {
@@ -24,9 +27,9 @@ app.use("/accounts", AccountRoute);
 app.use("/topProducts", TopProductsRoute);
 app.use("/customersReview", HappyCustomerReviewRoute);
 
-// 404 error handler
+// 404 error generator
 app.use((req, res, next) => {
-  next(createHttpError(404, "Page not found!"));
+  next(createHttpError.NotFound("Page Not Found!"));
 });
 
 // Error Handler

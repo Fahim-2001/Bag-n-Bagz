@@ -16,12 +16,15 @@ Content-Type: application/json
 }
 
 ### Get a product by id.
-GET http://localhost:5000/accounts/63ed094b1b734d2f97dcb69d
+GET http://localhost:5000/bags/63ebc65bb4dad767806ae045
 
 ### Update a product by id.
-PATCH  http://localhost:5000/bags/id
+PATCH  http://localhost:5000/bags/63ecec1f11d0f727c66505b9
 Content-Type: application/json
 
+{
+  
+}
 
 ### Delete a product by id.
 DELETE   http://localhost:5000/customersReview/6401b95261ae1ec91e1e1e69
