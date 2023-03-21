@@ -1,11 +1,11 @@
 ### Get all products
-GET http://localhost:5000/bags
+GET http://localhost:5000/accounts
 
 ###Get Category based products
-GET http://localhost:5000/bags/category/Mountain_Bags
+GET http://localhost:5000/config/create-payment-intent
 
 ### Add product to db.
-POST http://localhost:5000/accounts
+POST http://localhost:5000/
 Content-Type: application/json
 
 {
@@ -31,12 +31,11 @@ POST http://localhost:5000/jwt
 Content-Type: application/json
 
 {
-  "email" : "johndoe@gmail.com"
+  "email" : "johndoe1@gmail.com"
 }
 
 ### Delete a product by id.
 DELETE   http://localhost:5000/customersReview/6401b95261ae1ec91e1e1e69
 
 ### Unknown API call , error check.
-
 GET http://localhost:5000/xyz

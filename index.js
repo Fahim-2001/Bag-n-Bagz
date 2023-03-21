@@ -9,6 +9,7 @@ const AccountRoute = require("./Routes/Account.route");
 const TopProductsRoute = require("./Routes/TopProducts.route");
 const HappyCustomerReviewRoute = require("./Routes/HappyCustomerReviews.route");
 const JWT_Route = require("./Routes/JWT.route");
+const StripeConfig = require("./Routes/StripeConfig.route");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -28,6 +29,7 @@ app.use("/accounts", AccountRoute);
 app.use("/topProducts", TopProductsRoute);
 app.use("/customersReview", HappyCustomerReviewRoute);
 app.use("/jwt", JWT_Route);
+app.use("/configs", StripeConfig);
 
 // 404 error generator
 app.use((req, res, next) => {

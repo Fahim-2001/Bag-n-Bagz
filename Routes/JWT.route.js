@@ -9,7 +9,6 @@ router.post("/", async (req, res, next) => {
     const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
       expiresIn: "1h",
     });
-    // console.log({ token });
     res.send({ email: user.email, token });
   } catch (error) {
     console.log(error);
